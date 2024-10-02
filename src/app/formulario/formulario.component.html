@@ -1,0 +1,22 @@
+<mat-card class="form-card">
+  <mat-card-title>Formulário de Cadastro</mat-card-title>
+  <mat-card-content>
+    <form (ngSubmit)="onSubmit()" class="formulario">
+
+        <label for="nome">Nome:</label>
+        <input id="nome" name="nome" [(ngModel)]="pessoa.nome" required>
+
+        <label for="email">Email:</label>
+        <input id="email" name="email" [(ngModel)]="pessoa.email" required email>
+
+        <label for="cpf">CPF:</label>
+        <input id="cpf" name="cpf" [(ngModel)]="pessoa.cpf" required>
+
+      <label for="telefone">Telefone:</label>
+      <input id="telefone" name="telefone" [(ngModel)]="pessoa.telefone" required>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </mat-card-content>
+</mat-card>
+
